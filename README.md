@@ -10,5 +10,6 @@ See project online here: http://htmlpreview.github.io/?https://github.com/JCDJul
 to-do
 =============
 
--Find a way to center the grid within a frame while still keeping it responsive to the window size.
--Pretty it up. Make some nicer buttons, fix the layout, make it look nicer.
+Find a way to center the grid within a frame while still keeping it responsive to the window size.
+
+Pretty it up. Make some nicer buttons, fix the layout, make it look nicer.
