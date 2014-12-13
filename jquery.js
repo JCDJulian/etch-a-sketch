@@ -2,7 +2,10 @@ var gridSize=16;
 $(document).ready(function(){
 	
 	$('body').prepend('<div class="frame"></div>');
+	$('.frame').css('height', '100vh');//set height to viewport height
 	drawPad(gridSize);
+
+
 
 	//Gradient Black mode
 	$('body').prepend('<button type="button" id="gradient">Gradient</button>');
@@ -44,6 +47,10 @@ $(document).ready(function(){
 });
 
 function drawPad(gridSize){
+
+		var winHeight = $('.frame').height();
+		var winWidth = $('.frame').width()
+
 		for(var i = 0; i < gridSize; i++){//create rows
 			$('.frame').append('<div class="row"></div>');
 		}
@@ -51,7 +58,14 @@ function drawPad(gridSize){
 			$('.row').append('<div class="square"></div>');
 		}
 
-		var square_size = $('.frame').width()/gridSize-5;//set size of squares to be proportional to the frame width
+		if (winHeight>winWidth){//check if there is more width space or height space
+		var square_size = winWidth/gridSize-5;//set size of squares to be proportional to the frame width
+		}
+		else{
+		var square_size = winHeight/gridSize-10;//set size of square to be proportional to the frame width
+		}
+		console.log($('.frame').width());
+		console.log($('.frame').height());
 
 		$('.square').css({
 		display: 'inline-block',
