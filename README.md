@@ -2,3 +2,7 @@ etch-a-sketch
 =============
 
 Etch-a-sketch webpage made using JQuery as part of Odin Project web development course.
+
+For more information, see: http://www.theodinproject.com/web-development-101/javascript-and-jquery
+
+See project online here: http://htmlpreview.github.io/?https://github.com/JCDJulian/etch-a-sketch/blob/master/index.html
